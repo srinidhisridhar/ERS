@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Upload new File</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <style>
+          body{
+            background-image: url('/static/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+          }
+          .mydiv{
+            background-color:white;
+            border-radius: 5px;
+            box-shadow: lightslategrey ;
+          }
+          .row{
+            width:50%;
+            position: relative;
+            left:25%;
+            top:20vh;
+          }
+          .center{
+            text-align:center;
+            align-self: center;
+          }
+          .cw{
+            color: #FFFFFF;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="container" >
+        <br><br>
+        <h2 class="center cw">Employability Rating System</h2>
+        <div class="row">
+          
+          <div class="col-md-12">
+            <div class="mydiv">
+              <br>
+                <h4 class="center">Upload your Resume!</h4>
+              
+              
+              <br>
+              <div class="col-md-12">
+                <form method=post enctype=multipart/form-data action="/result">
+                  <input type=file name=file><br><br>
+                  <input type=submit value=Upload class="btn btn-primary">
+                  <br><br>
+                </form>
+
+              </div>
+              
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+    </head>
+    <style>
+        body{
+            background-image: url('/static/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+          }
+          .center{
+            text-align: center;
+          }
+          .jumbotron{
+              background-color: white;
+          }
+    </style>
+   <body>
+    <br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h1 class="center">Predicted Results</h1>
+
+                        <table class="table">
+                            <tr>
+                                <th>Domain</th>
+                                <th>Rating</th>
+                            </tr>
+                            <tr>
+                                <td>Machine Learning</td>
+                                <td>{{ result[0] }} </td>
+                            </tr>
+                            <tr>
+                                <td>Cyber Security</td>
+                                <td> {{ result[1] }} </td>
+                            </tr>
+                            <tr>
+                                <td>Software Development</td> 
+                                <td>{{ result[2] }} </td>
+                            </tr>
+                            <tr>
+                                <td>Programming</td>
+                                <td> {{ result[3] }} </td>
+                            </tr>
+                            <tr>
+                                <td>General employability</td>
+                                <td> {{ result[4] }} </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>   
+       
+   </body>
+</html>
